@@ -7,7 +7,9 @@ class Main {
         int i=0,j=0,k=0;
         while(i<a && j<b) {                           // This is used to sort the elements between both arrays and store them in 3rd array
             if(arr1[i]<arr2[j]) {
-                finalArray[k++] = arr1[i++];
+                finalArray[k] = arr1[i];              // finalArray[k++] can be also written as finalArray[k]; k++;
+                 k++;
+                 i++;
             }
             else {
                 finalArray[k++] = arr2[j++];
